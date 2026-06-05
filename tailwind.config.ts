@@ -49,8 +49,8 @@ const config: Config = {
         ring: "hsl(var(--ring))",
       },
       fontFamily: {
-        heading: ["var(--font-plus-jakarta)", "sans-serif"],
-        body: ["var(--font-inter)", "sans-serif"],
+        heading: ["var(--font-bricolage)", "sans-serif"],
+        body: ["var(--font-manrope)", "sans-serif"],
       },
     },
   },

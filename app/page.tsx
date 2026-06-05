@@ -78,14 +78,14 @@ export default function HomePage() {
         <div className="absolute bottom-0 right-0 w-64 h-64 bg-[#1e3a8a]/5 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="mb-16">
             <p className="text-[10px] font-black tracking-[0.22em] uppercase text-[#1e3a8a] mb-4">
               Sound Familiar?
             </p>
-            <h2 className="font-heading font-bold text-3xl md:text-[2.75rem] text-[#0D1B2A] leading-tight mb-4">
+            <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#0D1B2A] leading-tight mb-4">
               Most E-Commerce Copy Has One Problem
             </h2>
-            <p className="text-[#2C2C2C]/55 text-[0.9rem] max-w-md mx-auto leading-[1.8]">
+            <p className="text-[#2C2C2C]/55 text-[0.9rem] max-w-md leading-[1.8]">
               It describes products instead of selling them. It talks about the brand
               instead of speaking to the buyer. EcomWords Lab exists to fix that.
             </p>
@@ -128,8 +128,8 @@ export default function HomePage() {
               <p className="text-[10px] font-black tracking-[0.22em] uppercase text-[#1e3a8a] mb-3">
                 What We Do
               </p>
-              <h2 className="font-heading font-bold text-3xl md:text-[2.5rem] text-[#0D1B2A] leading-tight">
-                Copy for Every Stage<br className="hidden md:block" /> of the Customer Journey
+              <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#0D1B2A] leading-tight">
+                Copy for Every Stage of the Customer Journey
               </h2>
             </div>
             <Link
@@ -245,12 +245,12 @@ export default function HomePage() {
           HOW IT WORKS — White, clean
       ───────────────────────────────────────── */}
       <section className="bg-white px-6 py-28">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-20">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-20">
             <p className="text-[10px] font-black tracking-[0.22em] uppercase text-[#1e3a8a] mb-3">
               The Process
             </p>
-            <h2 className="font-heading font-bold text-3xl md:text-[2.5rem] text-[#0D1B2A] leading-tight">
+            <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#0D1B2A] leading-tight">
               Simple. Straightforward. Results-Focused.
             </h2>
           </div>
@@ -287,7 +287,7 @@ export default function HomePage() {
               <p className="text-[10px] font-black tracking-[0.22em] uppercase text-[#1e3a8a] mb-3">
                 The Lab
               </p>
-              <h2 className="font-heading font-bold text-3xl md:text-[2.5rem] text-[#0D1B2A] leading-tight">
+              <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#0D1B2A] leading-tight">
                 Insights Worth Reading
               </h2>
             </div>
@@ -334,11 +334,11 @@ export default function HomePage() {
       ───────────────────────────────────────── */}
       <section className="bg-[#1e3a8a] px-6 py-28">
         <div className="max-w-2xl mx-auto">
-          <div className="bg-white rounded-2xl px-10 py-14 text-center shadow-lg">
+          <div className="bg-white rounded-2xl px-10 py-14 shadow-lg text-center">
             <p className="text-[10px] font-black tracking-[0.22em] uppercase text-[#1e3a8a] mb-5">
               Ready to Grow?
             </p>
-            <h2 className="font-heading font-bold text-3xl md:text-[2.25rem] text-[#0D1B2A] leading-tight mb-3">
+            <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#0D1B2A] leading-tight mb-3">
               Not sure where to start?
             </h2>
             <p className="text-[#1e3a8a] font-heading font-semibold text-lg mb-5">
@@ -369,7 +369,7 @@ export default function HomePage() {
               <p className="text-[10px] font-black tracking-[0.22em] uppercase text-[#1e3a8a] mb-4">
                 Work With Us
               </p>
-              <h2 className="font-heading font-bold text-3xl md:text-[2.25rem] text-[#0D1B2A] leading-tight mb-4">
+              <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#0D1B2A] leading-tight mb-4">
                 Let&apos;s Talk About Your Brand
               </h2>
               <p className="text-[#2C2C2C]/55 text-[0.9rem] leading-[1.8] mb-10">

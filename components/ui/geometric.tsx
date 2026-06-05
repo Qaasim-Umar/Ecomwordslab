@@ -75,7 +75,7 @@ export default function GeometricBackground({
           height={140}
           rotate={12}
           gradient="from-[#1e3a8a]/[0.35]"
-          className="left-[-10%] md:left-[-5%] top-[15%] md:top-[20%]"
+          className="left-[-10%] md:left-[-5%] top-[25%] md:top-[20%]"
         />
         <ElegantShape
           delay={0.5}
@@ -91,7 +91,7 @@ export default function GeometricBackground({
           height={80}
           rotate={-8}
           gradient="from-blue-800/[0.30]"
-          className="left-[5%] md:left-[10%] bottom-[5%] md:bottom-[10%]"
+          className="hidden md:block left-[5%] md:left-[10%] bottom-[5%] md:bottom-[10%]"
         />
         <ElegantShape
           delay={0.6}
@@ -99,7 +99,7 @@ export default function GeometricBackground({
           height={60}
           rotate={20}
           gradient="from-[#1e3a8a]/[0.30]"
-          className="right-[15%] md:right-[20%] top-[10%] md:top-[15%]"
+          className="hidden md:block right-[15%] md:right-[20%] top-[10%] md:top-[15%]"
         />
         <ElegantShape
           delay={0.7}
@@ -107,7 +107,7 @@ export default function GeometricBackground({
           height={40}
           rotate={-25}
           gradient="from-blue-600/[0.30]"
-          className="left-[20%] md:left-[25%] top-[5%] md:top-[10%]"
+          className="hidden md:block left-[20%] md:left-[25%] top-[5%] md:top-[10%]"
         />
       </div>
 

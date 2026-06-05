@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <header
       className={cn(
-        "sticky top-4 z-50 mx-auto w-full max-w-4xl px-4",
+        "sticky top-4 z-50 mx-4 md:mx-auto md:w-full md:max-w-4xl",
         "rounded-xl border border-[#EEECE8] shadow-sm",
         "bg-white/30 backdrop-blur-xl backdrop-saturate-150",
       )}

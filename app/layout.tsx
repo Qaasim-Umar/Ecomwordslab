@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Manrope } from "next/font/google";
+import { Bricolage_Grotesque, Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const plusJakarta = Plus_Jakarta_Sans({
+const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
-  variable: "--font-plus-jakarta",
+  variable: "--font-bricolage",
   display: "swap",
 });
 
@@ -44,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${plusJakarta.variable} ${manrope.variable}`}>
+    <html lang="en" className={`${bricolage.variable} ${manrope.variable}`}>
       <body className="font-body antialiased">
         <Navbar />
         <main>{children}</main>

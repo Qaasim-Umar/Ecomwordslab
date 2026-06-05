@@ -6,6 +6,7 @@ import { ArrowRight, TrendingUp, Zap, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import GeometricBackground from "@/components/ui/geometric";
+import TypingEffect from "@/components/ui/typing-effect";
 
 const ACCENT = "#1e3a8a";
 
@@ -86,7 +87,7 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
           {/* Left Column */}
-          <div className="space-y-5 relative z-10">
+          <div className="space-y-5 relative z-10 min-h-[400px] sm:min-h-0">
 
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-white border border-[#1e3a8a]/20 rounded-full px-3 py-1.5 shadow-sm">
@@ -100,23 +101,12 @@ export default function Hero() {
             <div className="space-y-3">
               <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0D1B2A] leading-tight">
                 Words That{" "}
-                <span className="text-[#1e3a8a] relative inline-block">
-                  Convert
-                  <svg
-                    className="absolute -bottom-1 left-0 w-full"
-                    height="6"
-                    viewBox="0 0 200 8"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 5.5C50 2.5 150 2.5 199 5.5"
-                      stroke="#1e3a8a"
-                      strokeWidth="3"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </span>
+                <TypingEffect
+                  texts={["Build Brands", "Sell While You Sleep"]}
+                  className="text-[#1e3a8a]"
+                  typingSpeed={70}
+                  rotationInterval={2500}
+                />
               </h1>
               <p className="text-sm sm:text-base text-[#0D1B2A]/60 leading-relaxed max-w-lg">
                 Premium copywriting that transforms product pages into
@@ -128,7 +118,7 @@ export default function Hero() {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-3">
               <Button
-                className="bg-[#1e3a8a] hover:bg-[#1e3a8a]/90 text-white font-semibold px-6 py-2.5 text-sm rounded-lg shadow-md shadow-[#1e3a8a]/20 hover:shadow-lg transition-all duration-300 group h-auto"
+                className="w-full sm:w-auto bg-[#1e3a8a] hover:bg-[#1e3a8a]/90 text-white font-semibold px-6 text-sm rounded-lg shadow-md shadow-[#1e3a8a]/20 hover:shadow-lg transition-all duration-300 group h-11"
                 asChild
               >
                 <Link href="/#contact">
@@ -138,7 +128,7 @@ export default function Hero() {
               </Button>
               <Button
                 variant="outline"
-                className="border-2 border-[#0D1B2A] text-[#0D1B2A] hover:bg-[#0D1B2A] hover:text-white font-semibold px-6 py-2.5 text-sm rounded-lg transition-all duration-300 h-auto"
+                className="w-full sm:w-auto border-2 border-[#0D1B2A] text-[#0D1B2A] hover:bg-[#0D1B2A] hover:text-white font-semibold px-6 text-sm rounded-lg transition-all duration-300 h-11"
                 asChild
               >
                 <Link href="/services">View Our Services</Link>
