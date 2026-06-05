@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-navy: #0D1B2A;
+  --color-gold: #C1440E;
+  --color-bg: #ffffff;
+  --color-text: #2C2C2C;
+  --color-subtle: #EEECE8;
+
+  /* shadcn/ui CSS variables (Tailwind v3 HSL format) */
+  --background: 40 14% 97%;
+  --foreground: 210 47% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 210 47% 11%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 210 47% 11%;
+  --primary: 210 47% 11%;
+  --primary-foreground: 40 14% 97%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 210 47% 11%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215 16% 47%;
+  --accent: 210 40% 96%;
+  --accent-foreground: 210 47% 11%;
+  --destructive: 0 84% 60%;
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --ring: 210 47% 11%;
+  --radius: 0.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-manrope), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-plus-jakarta), sans-serif;
+}
+
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(13,27,42,0.055) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
