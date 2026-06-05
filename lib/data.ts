@@ -63,6 +63,14 @@ export const services = [
       "Reviewing existing content and identifying opportunities to improve engagement, conversions, and overall performance.",
     icon: "Search",
   },
+  {
+    id: "shopify-setup-optimization",
+    title: "Shopify Setup & Optimization",
+    outcome: "Launch and scale on Shopify",
+    description:
+      "Setting up and optimizing Shopify stores for performance, conversion, and growth — from theme configuration to copy-driven product page structure.",
+    icon: "ShoppingBag",
+  },
 ];
 
 export const blogPosts = [

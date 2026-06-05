@@ -7,6 +7,7 @@ import {
   Megaphone,
   TrendingUp,
   Search,
+  ShoppingBag,
   type LucideProps,
 } from "lucide-react";
 
@@ -19,6 +20,7 @@ const iconMap: Record<string, React.ComponentType<LucideProps>> = {
   Megaphone,
   TrendingUp,
   Search,
+  ShoppingBag,
 };
 
 interface ServiceIconProps extends LucideProps {

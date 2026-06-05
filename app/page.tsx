@@ -136,7 +136,7 @@ export default function HomePage() {
               href="/services"
               className="text-[#1e3a8a] font-medium text-sm hover:underline whitespace-nowrap self-start sm:self-end"
             >
-              See all 8 services →
+              See all 9 services →
             </Link>
           </div>
 
@@ -224,7 +224,7 @@ export default function HomePage() {
             <div className="col-span-2 bg-[#1e3a8a]/8 border border-[#1e3a8a]/12 rounded-2xl p-7 flex flex-col sm:flex-row items-center justify-between gap-5">
               <div>
                 <h3 className="font-heading font-bold text-[1.05rem] text-[#0D1B2A] mb-1">
-                  8 services. One goal.
+                  9 services. One goal.
                 </h3>
                 <p className="text-[0.82rem] text-[#2C2C2C]/55 leading-relaxed">
                   Copy that drives measurable results at every stage of the funnel.

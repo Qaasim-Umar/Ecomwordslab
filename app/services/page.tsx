@@ -19,8 +19,9 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <>
+      <style>{`body { background-color: #EEF2FF; }`}</style>
       {/* PAGE HERO */}
-      <section className="relative overflow-hidden bg-white px-6 py-28 md:py-32">
+      <section className="relative overflow-hidden bg-[#EEF2FF] px-6 py-28 md:py-32">
         {/* Blue glow blobs */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-[#1e3a8a]/5 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 right-0 w-64 h-64 bg-[#1e3a8a]/5 rounded-full blur-3xl pointer-events-none" />
@@ -51,7 +52,7 @@ export default function ServicesPage() {
       </section>
 
       {/* SERVICES GRID */}
-      <section className="bg-[#EEF2FF] px-6 py-24">
+      <section className="bg-white px-6 py-24">
         <div className="max-w-6xl mx-auto">
           <div className="mb-12">
             <p className="text-[10px] font-black tracking-[0.22em] uppercase text-[#1e3a8a] mb-3">
