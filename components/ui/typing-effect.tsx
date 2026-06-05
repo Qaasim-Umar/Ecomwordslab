@@ -8,6 +8,7 @@ interface TypingEffectProps {
   texts?: string[]
   className?: string
   pauseDuration?: number
+  rotationInterval?: number
   typingSpeed?: number
   deletingSpeed?: number
 }
@@ -15,10 +16,12 @@ interface TypingEffectProps {
 export const TypingEffect = ({
   texts = ['Design', 'Development', 'Marketing'],
   className,
-  pauseDuration = 2000,
+  pauseDuration,
+  rotationInterval = 2000,
   typingSpeed = 80,
   deletingSpeed = 45,
 }: TypingEffectProps) => {
+  const effectivePauseDuration = pauseDuration ?? rotationInterval
   const [displayedText, setDisplayedText] = useState('')
   const [currentTextIndex, setCurrentTextIndex] = useState(0)
   const [phase, setPhase] = useState<'typing' | 'pausing' | 'deleting'>('typing')
@@ -37,7 +40,7 @@ export const TypingEffect = ({
         }, typingSpeed)
         return () => clearTimeout(t)
       } else {
-        const t = setTimeout(() => setPhase('deleting'), pauseDuration)
+        const t = setTimeout(() => setPhase('deleting'), effectivePauseDuration)
         return () => clearTimeout(t)
       }
     }
