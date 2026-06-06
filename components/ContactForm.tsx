@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { CheckCircle } from "lucide-react";
 import { serviceDropdownOptions } from "@/lib/data";
 
@@ -14,14 +15,35 @@ interface FormState {
 export default function ContactForm() {
   const [form, setForm] = useState<FormState>({ name: "", email: "", service: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
     setForm({ ...form, [e.target.name]: e.target.value });
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setSubmitted(true);
+    setSending(true);
+    setError(null);
+    try {
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          name: form.name,
+          email: form.email,
+          title: form.service || "Not specified",
+          message: form.message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Please try again or email us directly.");
+    } finally {
+      setSending(false);
+    }
   }
 
   const inputClass = "w-full border border-[#E5E1DB] rounded-xl px-4 py-3 text-sm text-[#2C2C2C] bg-[#FAFAF8] placeholder:text-[#2C2C2C]/30 focus:outline-none focus:border-[#1e3a8a] focus:ring-2 focus:ring-[#1e3a8a]/10 transition";
@@ -77,11 +99,16 @@ export default function ContactForm() {
         </div>
       </div>
 
+      {error && (
+        <p className="mt-4 text-sm text-red-600">{error}</p>
+      )}
+
       <button
         type="submit"
-        className="mt-6 w-full bg-[#1e3a8a] text-white font-semibold text-sm py-3.5 rounded-xl hover:bg-[#172d6e] transition-colors cursor-pointer"
+        disabled={sending}
+        className="mt-6 w-full bg-[#1e3a8a] text-white font-semibold text-sm py-3.5 rounded-xl hover:bg-[#172d6e] transition-colors cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        Send Message
+        {sending ? "Sending…" : "Send Message"}
       </button>
     </form>
   );
