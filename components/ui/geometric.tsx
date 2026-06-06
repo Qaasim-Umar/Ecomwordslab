@@ -46,10 +46,10 @@ function ElegantShape({
             "absolute inset-0 rounded-full",
             "bg-gradient-to-r to-transparent",
             gradient,
-            "backdrop-blur-[2px] border-2 border-[#1e3a8a]/[0.40]",
-            "shadow-[0_8px_32px_0_rgba(30,58,138,0.08)]",
+            "backdrop-blur-[2px] border-2 border-[#1e3a8a]/[0.12]",
+            "shadow-[0_8px_32px_0_rgba(30,58,138,0.04)]",
             "after:absolute after:inset-0 after:rounded-full",
-            "after:bg-[radial-gradient(circle_at_50%_50%,rgba(30,58,138,0.08),transparent_70%)]",
+            "after:bg-[radial-gradient(circle_at_50%_50%,rgba(30,58,138,0.04),transparent_70%)]",
           )}
         />
       </motion.div>
@@ -66,7 +66,7 @@ export default function GeometricBackground({
 }) {
   return (
     <div className={cn("relative w-full overflow-hidden bg-white", className)}>
-      <div className="absolute inset-0 bg-gradient-to-br from-[#1e3a8a]/[0.03] via-transparent to-[#1e3a8a]/[0.03] blur-3xl" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#1e3a8a]/[0.01] via-transparent to-[#1e3a8a]/[0.01] blur-3xl" />
 
       <div className="absolute inset-0 overflow-hidden">
         <ElegantShape
@@ -74,7 +74,7 @@ export default function GeometricBackground({
           width={600}
           height={140}
           rotate={12}
-          gradient="from-[#1e3a8a]/[0.12]"
+          gradient="from-[#1e3a8a]/[0.06]"
           className="left-[-10%] md:left-[-5%] top-[25%] md:top-[20%]"
         />
         <ElegantShape
@@ -82,7 +82,7 @@ export default function GeometricBackground({
           width={500}
           height={120}
           rotate={-15}
-          gradient="from-blue-700/[0.12]"
+          gradient="from-blue-700/[0.06]"
           className="right-[-5%] md:right-[0%] top-[70%] md:top-[75%]"
         />
         <ElegantShape
@@ -90,7 +90,7 @@ export default function GeometricBackground({
           width={300}
           height={80}
           rotate={-8}
-          gradient="from-blue-800/[0.10]"
+          gradient="from-blue-800/[0.05]"
           className="hidden md:block left-[5%] md:left-[10%] bottom-[5%] md:bottom-[10%]"
         />
         <ElegantShape
@@ -98,7 +98,7 @@ export default function GeometricBackground({
           width={200}
           height={60}
           rotate={20}
-          gradient="from-[#1e3a8a]/[0.10]"
+          gradient="from-[#1e3a8a]/[0.05]"
           className="hidden md:block right-[15%] md:right-[20%] top-[10%] md:top-[15%]"
         />
         <ElegantShape
@@ -106,7 +106,7 @@ export default function GeometricBackground({
           width={150}
           height={40}
           rotate={-25}
-          gradient="from-blue-600/[0.10]"
+          gradient="from-blue-600/[0.05]"
           className="hidden md:block left-[20%] md:left-[25%] top-[5%] md:top-[10%]"
         />
       </div>
