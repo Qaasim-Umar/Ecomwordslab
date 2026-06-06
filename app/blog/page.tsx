@@ -52,7 +52,7 @@ export default function BlogPage() {
             {blogPosts.map((post) => (
               <article
                 key={post.id}
-                className="bg-white border border-[#E8E4DC] rounded-2xl p-7 flex flex-col hover:border-[#1e3a8a]/20 hover:shadow-sm transition-all"
+                className="bg-white border border-[#E8E4DC] rounded-2xl p-7 flex flex-col hover:border-[#1e3a8a]/20 hover:shadow-sm transition-all group"
               >
                 <div className="flex items-center gap-2.5 mb-5">
                   <span className={`text-[10.5px] font-semibold px-2.5 py-1 rounded-full ${categoryColors[post.category] ?? "bg-[#0D1B2A]/8 text-[#0D1B2A]/60"}`}>
@@ -70,7 +70,7 @@ export default function BlogPage() {
                 </p>
 
                 <Link
-                  href="/blog"
+                  href={`/blog/${post.slug}`}
                   className="inline-flex items-center gap-1.5 text-[0.82rem] font-semibold text-[#1e3a8a] hover:gap-2.5 transition-all"
                 >
                   Read more <ArrowRight size={13} />

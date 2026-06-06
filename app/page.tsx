@@ -318,7 +318,7 @@ export default function HomePage() {
                   {post.excerpt}
                 </p>
                 <Link
-                  href="/blog"
+                  href={`/blog/${post.slug}`}
                   className="inline-flex items-center gap-1.5 text-[0.82rem] font-semibold text-[#1e3a8a] hover:gap-2.5 transition-all"
                 >
                   Read more <ArrowRight size={13} />

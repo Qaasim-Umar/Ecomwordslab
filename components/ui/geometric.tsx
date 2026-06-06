@@ -39,7 +39,7 @@ function ElegantShape({
           ease: "easeInOut",
         }}
         style={{ width, height }}
-        className="relative"
+        className="relative max-w-[90vw]"
       >
         <div
           className={cn(
@@ -75,7 +75,7 @@ export default function GeometricBackground({
           height={140}
           rotate={12}
           gradient="from-[#1e3a8a]/[0.06]"
-          className="left-[-10%] md:left-[-5%] top-[25%] md:top-[20%]"
+          className="left-[4%] md:left-[-5%] top-[25%] md:top-[20%]"
         />
         <ElegantShape
           delay={0.5}
