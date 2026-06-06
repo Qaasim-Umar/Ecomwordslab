@@ -27,7 +27,7 @@ export default function ContactForm() {
     setSending(true);
     setError(null);
     try {
-      await emailjs.send(
+      const result = await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         {
@@ -38,8 +38,10 @@ export default function ContactForm() {
         },
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       );
+      console.log("EmailJS success:", result);
       setSubmitted(true);
-    } catch {
+    } catch (err) {
+      console.error("EmailJS error:", err);
       setError("Something went wrong. Please try again or email us directly.");
     } finally {
       setSending(false);

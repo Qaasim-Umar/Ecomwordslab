@@ -7,6 +7,7 @@ import {
 import ContactForm from "@/components/ContactForm";
 import ServiceIcon from "@/components/ServiceIcon";
 import Hero from "@/components/Hero";
+import TestimonialsSlider from "@/components/TestimonialsSlider";
 import { services, blogPosts } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -274,6 +275,24 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ─────────────────────────────────────────
+          TESTIMONIALS — White
+      ───────────────────────────────────────── */}
+      <section className="bg-[#F8F7F4] px-6 py-28">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14 text-center">
+            <p className="text-[10px] font-black tracking-[0.22em] uppercase text-[#1e3a8a] mb-3">
+              Client Results
+            </p>
+            <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#0D1B2A] leading-tight">
+              What Our Clients Say
+            </h2>
+          </div>
+
+          <TestimonialsSlider />
         </div>
       </section>
 
