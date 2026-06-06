@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Mail } from "lucide-react";
 import { blogPosts } from "@/lib/data";
+import Logo from "@/components/Logo";
 
 export default function Footer() {
   return (
@@ -10,8 +11,8 @@ export default function Footer() {
 
           {/* Wordmark + tagline */}
           <div className="md:col-span-1">
-            <Link href="/" className="font-heading font-bold text-[1.05rem] tracking-tight">
-              EcomWords<span className="text-[#C1440E]">Lab</span>
+            <Link href="/" className="inline-block hover:opacity-80 transition-opacity">
+              <Logo className="h-9 w-auto brightness-0 invert" />
             </Link>
             <p className="mt-3 text-[0.8rem] text-white/38 leading-relaxed">
               Copy that converts. Strategy that scales. Built for e-commerce brands

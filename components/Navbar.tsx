@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import Logo from "@/components/Logo";
 
 const links = [
   { label: "Services", href: "/services" },
@@ -24,11 +25,8 @@ export default function Navbar() {
     >
       <nav className="flex items-center justify-between px-4 py-2">
         {/* Logo */}
-        <Link
-          href="/"
-          className="font-heading font-bold text-[1.05rem] text-[#0D1B2A] tracking-tight hover:opacity-80 transition-opacity"
-        >
-          EcomWords<span className="text-[#1e3a8a]">Lab</span>
+        <Link href="/" className="hover:opacity-80 transition-opacity">
+          <Logo className="h-9 w-auto" />
         </Link>
 
         {/* Desktop links */}
